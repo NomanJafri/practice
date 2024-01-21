@@ -10,7 +10,7 @@
     
     body {
       font-family: 'Sono', sans-serif;
-      background-color: black;
+      background-color: black;      
 
     }
 
@@ -20,6 +20,7 @@
       color: rgb(249, 149, 0);
       display: flex;
       padding: 10px;
+      margin-bottom: 30px;
     }
 
     .nav-bar {
@@ -36,6 +37,23 @@
     .nav-bar > a:hover {
       background-color: rgb(249, 149, 0);
       color: rgb(57, 55, 55);
+    }
+
+    #intro {
+      text-align: justify;      
+      color: white;
+      font-weight: 900;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 20vh 10vh 12vh 10vh;
+      height: 30vh; 
+      background-size: 400px 400px;
+      background-position: 40px;
+      background-blend-mode: darken;
+      /* background-attachment: fixed; */
+      background-repeat: repeat-x;
+      background-image: url('https://plus.unsplash.com/premium_photo-1674289121415-ec50cba976b6?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');     
+      background-color: rgba(113, 85, 85, 0.8);
     }
     
     li {
@@ -110,9 +128,17 @@
 
       #search, .nav-bar>button{
         display: none;
+      }      
+    }
 
+    @media (max-width: 580px) {
+      #intro {
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 12vh 9vh 8vh 11vh;
+        height: 60vh; 
       }
-      
     }
   </style>
 </head>
@@ -121,12 +147,15 @@
   <div class="nav-container">
     <div class="logo">LOGO</div>
     <div class="nav-bar">
-      <a href="" class="nav-item">Home</a>
+      <a href="#intro" class="nav-item">About</a>
       <a href="#plans" class="nav-item">Plans</a>
-      <a href="" class="nav-item">Contact</a>
+      <a href="#" class="nav-item">Contact</a>
       <input type="search" name="search" id="search">
       <button type="submit">Search</button>
     </div>
+  </div>
+  <div id="intro">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget leo nec orci efficitur vulputate. Pellentesque iaculis enim vitae bibendum pharetra. Praesent maximus neque sit amet magna accumsan, non malesuada augue iaculis. Duis tincidunt mollis est vel viverra. Proin in neque quis tellus finibus consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse vel mollis ante, eget malesuada lectus. Quisque lacus libero, tristique porttitor magna et, aliquet ornare arcu.
   </div>
   <div id="plans" class="pricing-container">
     <div class="pricing-plan">
