@@ -21,8 +21,6 @@
     */
     .container {
       display: grid;
-      height: 748px;
-      width: 748px;      
       grid-template-rows:414px 130px 155px 20px;
       grid-template-columns: 320px 198px 153px 50px;
     }
@@ -50,32 +48,68 @@
       background-color: #F9D01E;
     }
 
-    .box-1 {
-      border-bottom: 9px solid #000;
+    .bl-9 {
+      border-left:9px solid #000;
     }
 
-    .box-2 {
+    .br-9 {
+      border-right:9px solid #000;
+    }
+
+    .bt-9 {
+      border-top:9px solid #000;
+    }
+
+    .bb-9 {
+      border-bottom:9px solid #000;
+    }
+
+    .bb-10 {
+      border-bottom: 10px solid #000;
+    }
+
+    .bt-10 {
+      border-top:10px solid #000;
+    }
+
+    .gc-2 {
+      grid-column: span 2;
+    }
+
+    .gc-3 {
+      grid-column: span 3;
+    }
+
+    .gr-2 {
+      grid-row: span 2;
+    }
+
+    /* .box-1 {
+      border-bottom: 9px solid #000;
+    } */
+
+    /* .box-2 {
       grid-column: span 3;
       border: 9px solid #000;
       border-top: 0;
       border-right: 0;
-    }
+    } */
 
-    .box-3 {
+    /* .box-3 {
       grid-row: span 2;
       border-bottom: 9px solid #000;
-    }
+    } */
 
-    .box-4 {
+    /* .box-4 {
       grid-area: 2 / 2 / 4 / 4;      
       border: 9px solid #000;
       border-top: 0;
-    }
+    } */
 
-    .box-5 {
+    /* .box-5 {
       border-bottom: 10px solid #000;
-    }
-
+    } */
+/* 
     .box-8 {
       border-left:9px solid #000;
     }
@@ -83,11 +117,11 @@
     .box-9 {
       border-left:9px solid #000;
       border-right: 9px solid #000;
-    }
+    } */
 
-    .box-6 {
+    /* .box-6 {
       border-top: 10px solid #000;
-    }
+    } */
 
   </style>
 </head>
@@ -95,24 +129,25 @@
 <body>
   <!-- Write your HTML here -->
   <div class="container">
-    <div class="item red box-1"></div>
+    <div class="red bb-9"></div>
     
-    <div class="item white box-2"></div>
+    <div class="white gc-3 bl-9 bb-9"></div>
     
-    <div class="item white box-3"></div>
+    <div class="white gr-2 bb-9"></div>
     
-    <div class="item white box-4"></div>
+    <div class="white gc-2 gr-2 bl-9 bb-9 br-9"></div>
     
-    <div class="item blue box-5"></div>
+    <div class="blue bb-10"></div>
 
-    <div class="item white box-6"></div>
+    <div class="white bt-10"></div>
 
-    <div class="item white box-7"></div>
+    <div class="white"></div>
     
-    <div class="item yellow box-8"></div>
+    <div class="yellow bl-9"></div>
     
-    <div class="item black box-9"></div>
-    <div class="item white box-10"></div>
+    <div class="black bl-9 br-9"></div>
+
+    <div class="white"></div>
   </div>
 </body>
 
